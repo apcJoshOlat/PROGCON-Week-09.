@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="W9_FC1_ASILO"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-06 09:51:17 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC04MTQ2TklROzIwMjYtMDktMTM7MTA6MTc6NTEgcG07Mjg2MQ=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC04MTQ2TklROzIwMjYtMDktMTM7MTA6MzQ6MDEgcG07MTsyOTYz"/>
+        <attribute name="edited" value="SHlhY3ludGg7SFlBQ1lOVEg7MjAyNi0xMC0wNjswOTo1MToxNyBQTTsxOzI4NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rainbowColors" type="String" array="True" size="7"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="&quot;Enter color &quot; &amp; (i + 1) &amp; &quot; of the rainbow:&quot;" newline="True"/>
+                <input variable="rainbowColors[i]"/>
+            </for>
+            <output expression="&quot;You've entered these rainbow colors&quot;" newline="True"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <output expression="&quot;Rainwbow color &quot; &amp; (i + 1) &amp; &quot; : &quot; &amp; rainbowColors[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
